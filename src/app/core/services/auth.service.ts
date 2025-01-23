@@ -16,7 +16,6 @@ export class AuthService {
   ) {
     this.isBrowser = isPlatformBrowser(this.platformId);
 
-    // Inicializa el estado según el token
     if (this.isBrowser) {
       const token = this.cookieService.get('authToken');
       this.authState.next(!!token);
