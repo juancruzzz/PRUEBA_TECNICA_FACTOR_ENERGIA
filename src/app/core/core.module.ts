@@ -1,15 +1,13 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 
 import { AuthGuard } from './guards/auth.guard';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 
 @NgModule({
+  imports: [HttpClientModule],
   providers: [
-    // Guardias
     AuthGuard,
-
-    // Interceptores HTTP
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,

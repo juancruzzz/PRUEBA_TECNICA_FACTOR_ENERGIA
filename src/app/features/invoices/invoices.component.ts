@@ -3,8 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { TranslateModule } from '@ngx-translate/core';
-import { Invoice, InvoicesService } from '../../core/services/invoices.service';
+import { InvoicesService } from '../../core/services/invoices.service';
 import { PdfService } from '../../core/services/pdf.service';
+import { Invoice } from '../../core/models/invoice.model';
 
 @Component({
   selector: 'app-invoices',

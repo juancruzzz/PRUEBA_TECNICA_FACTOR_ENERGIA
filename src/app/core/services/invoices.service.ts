@@ -1,13 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
+import { Invoice } from '../models/invoice.model';
 
-export interface Invoice {
-  id: number;
-  name: string;
-  issueDate: string;
-  amount: number;
-  supplyAddress: string;
-}
 
 @Injectable({
   providedIn: 'root',

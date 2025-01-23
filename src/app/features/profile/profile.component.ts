@@ -4,6 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import { ProfileService } from '../../core/services/profile.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-profile',
@@ -18,6 +19,7 @@ export class ProfileComponent implements OnInit {
   constructor (
     private fb: FormBuilder,
     private profileService: ProfileService,
+    private toastr: ToastrService
   ) { }
 
   ngOnInit (): void {
@@ -36,7 +38,9 @@ export class ProfileComponent implements OnInit {
   onSubmit (): void {
     if (this.profileForm.valid) {
       this.profileService.updateProfile(this.profileForm.value);
-      alert('Perfil actualizado correctamente');
+      this.toastr.success('Perfil actualizado correctamente', 'Éxito');
+    } else {
+      this.toastr.error('Algo salió mal', 'Error');
     }
   }
 }

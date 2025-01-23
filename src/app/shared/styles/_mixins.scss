@@ -1,0 +1,15 @@
+@mixin box-shadow($x, $y, $blur, $color) {
+    box-shadow: $x $y $blur $color;
+}
+
+@mixin text-color($color, $hover-color) {
+    color: $color;
+
+    &:hover {
+        color: $hover-color;
+    }
+    }
+
+    @mixin transition($property, $duration: 0.3s, $easing: ease) {
+    transition: $property $duration $easing;
+}

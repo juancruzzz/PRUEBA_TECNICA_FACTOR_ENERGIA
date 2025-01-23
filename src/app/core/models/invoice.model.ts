@@ -5,4 +5,3 @@ export interface Invoice {
     amount: number;
     supplyAddress: string;
   }
-  
