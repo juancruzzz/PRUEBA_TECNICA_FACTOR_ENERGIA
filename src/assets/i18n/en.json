@@ -1,0 +1,47 @@
+{
+  "LOGIN": {
+    "TITLE": "Login",
+    "SUBTITLE": "Enter your credentials to access",
+    "USERNAME": "Username",
+    "USERNAME_PLACEHOLDER": "Enter your username",
+    "PASSWORD": "Password",
+    "PASSWORD_PLACEHOLDER": "Enter your password",
+    "SUBMIT": "Login",
+    "ERRORS": {
+      "USERNAME_REQUIRED": "Username is required",
+      "PASSWORD_REQUIRED": "Password is required",
+      "PASSWORD_MINLENGTH": "Password must be at least 6 characters"
+    }
+  },
+  "SELECT_LANGUAGE": "Select Language",
+  "HEADER": {
+    "INVOICES": "Invoices",
+    "PROFILE": "Profile",
+    "WELCOME": "Welcome",
+    "LOGOUT": "Logout"
+  },
+  "INVOICES": {
+    "COLUMNS": {
+      "NAME": "Name",
+      "ISSUE_DATE": "Issue Date",
+      "AMOUNT": "Amount",
+      "SUPPLY_ADDRESS": "Address",
+      "ACTIONS": "Actions"
+    },
+    "ACTIONS": {
+      "VIEW": "View",
+      "DOWNLOAD": "Download"
+    }
+  },
+  "PROFILE": {
+    "TITLE": "User Profile",
+    "FIELDS": {
+      "NAME": "Name",
+      "EMAIL": "Email Address",
+      "SIGNUP_DATE": "Sign-Up Date",
+      "SHIPPING_ADDRESS": "Shipping Address"
+    },
+    "BUTTON": "Save Changes"
+  }
+}
+  

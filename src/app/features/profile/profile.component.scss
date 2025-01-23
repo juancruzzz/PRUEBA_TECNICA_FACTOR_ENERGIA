@@ -1,0 +1,70 @@
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3f51b5;
+    margin-bottom: 1.5rem;
+  }
+
+  form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+    mat-form-field {
+      width: 100%;
+
+      mat-label {
+        font-size: 1rem;
+        color: #757575;
+      }
+
+      input {
+        font-size: 1rem;
+      }
+    }
+
+    button {
+      align-self: flex-end;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+
+    form {
+      padding: 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    mat-form-field {
+      input {
+        font-size: 0.9rem;
+      }
+    }
+
+    button {
+      font-size: 0.9rem;
+    }
+  }
+}

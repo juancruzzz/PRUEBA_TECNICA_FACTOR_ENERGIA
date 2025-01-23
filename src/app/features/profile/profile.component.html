@@ -1,0 +1,28 @@
+<div class="profile-container">
+  <h2>{{ 'PROFILE.TITLE' | translate }}</h2>
+  <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'PROFILE.FIELDS.NAME' | translate }}</mat-label>
+      <input matInput formControlName="name" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'PROFILE.FIELDS.EMAIL' | translate }}</mat-label>
+      <input matInput formControlName="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'PROFILE.FIELDS.SIGNUP_DATE' | translate }}</mat-label>
+      <input matInput formControlName="signupDate" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>{{ 'PROFILE.FIELDS.SHIPPING_ADDRESS' | translate }}</mat-label>
+      <input matInput formControlName="shippingAddress" />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit">
+      {{ 'PROFILE.BUTTON' | translate }}
+    </button>
+  </form>
+</div>

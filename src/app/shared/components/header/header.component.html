@@ -1,0 +1,14 @@
+<header class="header">
+  <div class="header-container">
+    <img src="assets/images/logo.png" alt="Doble Electricidad Logo" class="logo" />
+    <nav>
+      <a routerLink="/invoices" routerLinkActive="active-link">{{ 'HEADER.INVOICES' | translate }}</a>
+      <a routerLink="/profile" routerLinkActive="active-link">{{ 'HEADER.PROFILE' | translate }}</a>
+      <span class="user-info">{{ 'HEADER.WELCOME' | translate }}, {{ userName }}</span>
+      <button mat-raised-button color="warn" (click)="logout()">
+        {{ 'HEADER.LOGOUT' | translate }}
+      </button>
+      <app-language-selector mode="compact"></app-language-selector>
+    </nav>
+  </div>
+</header>

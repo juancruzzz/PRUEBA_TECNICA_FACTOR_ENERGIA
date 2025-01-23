@@ -1,0 +1,47 @@
+{
+  "LOGIN": {
+    "TITLE": "Iniciar Sesión",
+    "SUBTITLE": "Introduce tus credenciales para acceder",
+    "USERNAME": "Usuario",
+    "USERNAME_PLACEHOLDER": "Ingrese su usuario",
+    "PASSWORD": "Contraseña",
+    "PASSWORD_PLACEHOLDER": "Ingrese su contraseña",
+    "SUBMIT": "Ingresar",
+    "ERRORS": {
+      "USERNAME_REQUIRED": "El usuario es requerido",
+      "PASSWORD_REQUIRED": "La contraseña es requerida",
+      "PASSWORD_MINLENGTH": "La contraseña debe tener al menos 6 caracteres"
+    }
+  },
+  "SELECT_LANGUAGE": "Seleccionar Idioma",
+  "HEADER": {
+    "INVOICES": "Facturas",
+    "PROFILE": "Perfil",
+    "WELCOME": "Bienvenido",
+    "LOGOUT": "Cerrar Sesión"
+  },
+  "INVOICES": {
+    "COLUMNS": {
+      "NAME": "Nombre",
+      "ISSUE_DATE": "Fecha de Emisión",
+      "AMOUNT": "Importe",
+      "SUPPLY_ADDRESS": "Dirección",
+      "ACTIONS": "Acciones"
+    },
+    "ACTIONS": {
+      "VIEW": "Visualizar",
+      "DOWNLOAD": "Descargar"
+    }
+  },
+  "PROFILE": {
+    "TITLE": "Perfil del Usuario",
+    "FIELDS": {
+      "NAME": "Nombre",
+      "EMAIL": "Correo Electrónico",
+      "SIGNUP_DATE": "Fecha de Alta",
+      "SHIPPING_ADDRESS": "Dirección de Envío"
+    },
+    "BUTTON": "Guardar Cambios"
+  }
+}
+  

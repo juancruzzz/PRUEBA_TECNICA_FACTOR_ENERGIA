@@ -1,0 +1,41 @@
+<mat-table [dataSource]="invoices" class="mat-elevation-z8">
+  <!-- Nombre -->
+  <ng-container matColumnDef="name">
+    <mat-header-cell *matHeaderCellDef> {{ 'INVOICES.COLUMNS.NAME' | translate }} </mat-header-cell>
+    <mat-cell *matCellDef="let invoice"> {{ invoice.name }} </mat-cell>
+  </ng-container>
+
+  <!-- Fecha de Emisión -->
+  <ng-container matColumnDef="issueDate">
+    <mat-header-cell *matHeaderCellDef> {{ 'INVOICES.COLUMNS.ISSUE_DATE' | translate }} </mat-header-cell>
+    <mat-cell *matCellDef="let invoice"> {{ invoice.issueDate }} </mat-cell>
+  </ng-container>
+
+  <!-- Importe -->
+  <ng-container matColumnDef="amount">
+    <mat-header-cell *matHeaderCellDef> {{ 'INVOICES.COLUMNS.AMOUNT' | translate }} </mat-header-cell>
+    <mat-cell *matCellDef="let invoice"> {{ invoice.amount | currency:'EUR' }} </mat-cell>
+  </ng-container>
+
+  <!-- Dirección de Suministro -->
+  <ng-container matColumnDef="supplyAddress">
+    <mat-header-cell *matHeaderCellDef> {{ 'INVOICES.COLUMNS.SUPPLY_ADDRESS' | translate }} </mat-header-cell>
+    <mat-cell *matCellDef="let invoice"> {{ invoice.supplyAddress }} </mat-cell>
+  </ng-container>
+
+  <!-- Acciones -->
+  <ng-container matColumnDef="actions">
+    <mat-header-cell *matHeaderCellDef> {{ 'INVOICES.COLUMNS.ACTIONS' | translate }} </mat-header-cell>
+    <mat-cell *matCellDef="let invoice">
+      <button mat-raised-button color="primary" (click)="onView(invoice)">
+        {{ 'INVOICES.ACTIONS.VIEW' | translate }}
+      </button>
+      <button mat-raised-button color="accent" (click)="onDownload(invoice)">
+        {{ 'INVOICES.ACTIONS.DOWNLOAD' | translate }}
+      </button>
+    </mat-cell>
+  </ng-container>
+
+  <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+  <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+</mat-table>
